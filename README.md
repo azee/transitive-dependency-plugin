@@ -1,1 +1,23 @@
 # transitive-dependency-plugin
+```
+<build>
+    <plugins>
+        <plugin>
+            <groupId>${groupId}</groupId>
+            <artifactId>${artifactId}</artifactId>
+            <version>${version}</version>
+            <executions>
+                <execution>
+                    <phase>process-resources</phase>
+                    <goals>
+                        <goal>transitive-dependency</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <failOnError>true</failOnError>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
